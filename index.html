@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CRISSANTY BLUE | Excellence</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap');
+
+        :root {
+            --electric-blue: #0052FF; /* Azul vibrante y profesional */
+            --deep-navy: #0A192F;
+            --soft-gray: #F8FAFC;
+            --white: #FFFFFF;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--white);
+            color: var(--deep-navy);
+            overflow-x: hidden;
+        }
+
+        /* Hero Section Persuasiva */
+        .hero {
+            background: linear-gradient(180deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            color: var(--white);
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 10px 30px rgba(0, 82, 255, 0.2);
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: -1px;
+            line-height: 1;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 15px;
+            font-weight: 300;
+        }
+
+        /* Contenedor de Botones */
+        main {
+            padding: 40px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: -50px; /* Eleva los botones sobre el fondo azul */
+        }
+
+        .btn-large {
+            background: var(--white);
+            border: none;
+            padding: 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 82, 255, 0.1);
+        }
+
+        .btn-large:active {
+            transform: scale(0.96);
+            background: var(--soft-gray);
+        }
+
+        .btn-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            color: var(--electric-blue);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .btn-subtitle {
+            font-size: 0.85rem;
+            color: #64748B;
+            font-weight: 400;
+        }
+
+        /* Estética de marca abajo */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.8rem;
+            color: #94A3B8;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .accent-line {
+            width: 50px;
+            height: 4px;
+            background: var(--white);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>CRISSANTY<br>BLUE</h1>
+        <div class="accent-line"></div>
+        <p>Innovation and reliability in every single step.</p>
+    </section>
+
+    <main>
+        <a href="#" class="btn-large">
+            <span class="btn-title">Who We Are</span>
+            <span class="btn-subtitle">Discover our history and values.</span>
+        </a>
+
+        <a href="#" class="btn-large">
+            <span class="btn-title">Our Mission</span>
+            <span class="btn-subtitle">What we strive for every day.</span>
+        </a>
+
+        <a href="#" class="btn-large" style="background: var(--electric-blue);">
+            <span class="btn-title" style="color: white;">Contact Us</span>
+            <span class="btn-subtitle" style="color: rgba(255,255,255,0.8);">Get in touch with our expert team.</span>
+        </a>
+    </main>
+
+    <footer>
+        CRISSANTY BLUE &copy; 2026
+    </footer>
+
+</body>
+</html>
