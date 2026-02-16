@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>CRISSANTY BLUE | Excellence in Advisory</title>
+    <title>CRISSANTY BLUE | Main Menu</title>
     <style>
-        /* Importación de fuentes de alta calidad */
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap');
 
         :root {
@@ -32,10 +31,10 @@
             min-height: 100vh;
         }
 
-        /* Hero Banner Estilo App Premium */
+        /* Hero Banner con Logo Visible */
         .hero-banner {
             background: linear-gradient(135deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
-            padding: 60px 20px 50px 20px;
+            padding: 60px 20px 45px 20px;
             text-align: center;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
@@ -47,9 +46,10 @@
         }
 
         .logo-img {
-            max-width: 280px; /* Tamaño del banner solicitado */
+            max-width: 280px;
             width: 85%;
             height: auto;
+            /* Asegúrate de que la ruta img/logo.png sea correcta */
             filter: drop-shadow(0 8px 15px rgba(0,0,0,0.3));
         }
 
@@ -58,8 +58,8 @@
             font-size: 1.8rem;
             color: var(--white);
             margin: 0;
-            letter-spacing: 1px;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .hero-content p {
@@ -69,19 +69,19 @@
             font-weight: 300;
         }
 
-        /* Main Menu - App Layout */
+        /* Menú de Navegación */
         main {
             padding: 35px 25px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 18px;
             flex: 1;
         }
 
         .nav-card {
             background: var(--white);
             border: none;
-            padding: 28px 20px;
+            padding: 26px 20px;
             border-radius: 24px;
             text-decoration: none;
             display: flex;
@@ -93,7 +93,7 @@
             border: 1px solid rgba(0, 98, 255, 0.05);
         }
 
-        /* Efecto de pulsación para Mobile */
+        /* Efecto de clic para sensación de App */
         .nav-card:active {
             transform: scale(0.96);
             background-color: #F1F5FF;
@@ -101,7 +101,7 @@
 
         .nav-card .title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: var(--electric-blue);
             text-transform: uppercase;
             margin-bottom: 6px;
@@ -115,10 +115,11 @@
             max-width: 90%;
         }
 
-        /* Botón Destacado (Call to Action) */
+        /* Estilo para el botón de contacto (Destacado) */
         .nav-card-primary {
             background: var(--electric-blue);
             box-shadow: 0 10px 25px rgba(0, 98, 255, 0.3);
+            border: none;
         }
 
         .nav-card-primary .title {
@@ -129,7 +130,6 @@
             color: rgba(255, 255, 255, 0.85);
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 30px;
@@ -148,25 +148,25 @@
             <img src="img/logo.png" alt="CRISSANTY BLUE Logo" class="logo-img">
         </div>
         <div class="hero-content">
-            <h1>Expert Guidance</h1>
-            <p>Master your investments with confidence.</p>
+            <h1>Expert Advisory</h1>
+            <p>Guiding your path to successful investments.</p>
         </div>
     </header>
 
     <main>
         <a href="index_who.html" class="nav-card">
             <span class="title">Who We Are</span>
-            <span class="description">Meet the team of experts dedicated to your financial growth.</span>
+            <span class="description">Get to know the experts behind your future growth.</span>
         </a>
 
         <a href="index_mision.html" class="nav-card">
             <span class="title">Our Mission</span>
-            <span class="description">Learn how we empower entrepreneurs to achieve absolute success.</span>
+            <span class="description">Our commitment to mentoring successful entrepreneurs.</span>
         </a>
 
         <a href="index_contact.html" class="nav-card nav-card-primary">
             <span class="title">Contact Us</span>
-            <span class="description">Ready to start? Get a personalized orientation today.</span>
+            <span class="description">Ready to start? Request your professional orientation.</span>
         </a>
     </main>
 
