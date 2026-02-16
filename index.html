@@ -3,144 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>CRISSANTY BLUE | Excellence</title>
+    <title>CRISSANTY BLUE | Home</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap');
 
         :root {
-            --electric-blue: #0052FF; /* Azul vibrante y profesional */
-            --deep-navy: #0A192F;
-            --soft-gray: #F8FAFC;
+            --electric-blue: #0062FF; 
+            --deep-navy: #050A30;
+            --soft-gray: #F1F5F9;
             --white: #FFFFFF;
+            --glass: rgba(255, 255, 255, 0.95);
         }
 
         body {
             margin: 0;
             padding: 0;
             font-family: 'Inter', sans-serif;
-            background-color: var(--white);
+            background-color: var(--soft-gray);
             color: var(--deep-navy);
-            overflow-x: hidden;
-        }
-
-        /* Hero Section Persuasiva */
-        .hero {
-            background: linear-gradient(180deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
-            height: 50vh;
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header con Logo */
+        header {
+            background-color: var(--white);
+            padding: 20px;
+            display: flex;
             justify-content: center;
             align-items: center;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container img {
+            height: 60px; /* Ajusta según el diseño de tu logo */
+            width: auto;
+            display: block;
+        }
+
+        /* Hero Section Persuasiva Estilo App */
+        .hero-app {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
+            padding: 40px 25px;
             text-align: center;
-            padding: 20px;
             color: var(--white);
-            border-bottom-left-radius: 40px;
-            border-bottom-right-radius: 40px;
-            box-shadow: 0 10px 30px rgba(0, 82, 255, 0.2);
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
         }
 
-        .hero h1 {
+        .hero-app h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             margin: 0;
+            text-transform: uppercase;
             letter-spacing: -1px;
-            line-height: 1;
         }
 
-        .hero p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            margin-top: 15px;
+        .hero-app p {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-top: 10px;
             font-weight: 300;
         }
 
-        /* Contenedor de Botones */
+        /* Lista de Botones (Acciones) */
         main {
-            padding: 40px 25px;
+            padding: 25px;
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            margin-top: -50px; /* Eleva los botones sobre el fondo azul */
+            gap: 12px;
+            flex: 1;
         }
 
-        .btn-large {
+        .nav-button {
             background: var(--white);
             border: none;
-            padding: 25px;
-            border-radius: 20px;
+            padding: 22px;
+            border-radius: 18px;
             text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            border: 1px solid rgba(0, 82, 255, 0.1);
+            display: block;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease, background 0.2s ease;
+            border: 1px solid rgba(0, 0, 0, 0.02);
         }
 
-        .btn-large:active {
-            transform: scale(0.96);
-            background: var(--soft-gray);
+        .nav-button:active {
+            transform: scale(0.97);
+            background-color: #f8faff;
         }
 
-        .btn-title {
+        .btn-text {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             color: var(--electric-blue);
-            text-transform: uppercase;
-            margin-bottom: 5px;
+            display: block;
+            margin-bottom: 4px;
         }
 
-        .btn-subtitle {
+        .btn-desc {
             font-size: 0.85rem;
             color: #64748B;
-            font-weight: 400;
+            display: block;
         }
 
-        /* Estética de marca abajo */
+        /* Botón de Acción Principal (Call to Action) */
+        .btn-primary {
+            background: var(--electric-blue);
+            border: none;
+        }
+
+        .btn-primary .btn-text {
+            color: var(--white);
+        }
+
+        .btn-primary .btn-desc {
+            color: rgba(255,255,255,0.8);
+        }
+
         footer {
             text-align: center;
-            padding: 40px 20px;
-            font-size: 0.8rem;
+            padding: 25px;
+            font-size: 0.75rem;
             color: #94A3B8;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .accent-line {
-            width: 50px;
-            height: 4px;
-            background: var(--white);
-            margin: 20px auto;
-            border-radius: 2px;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
-    <section class="hero">
-        <h1>CRISSANTY<br>BLUE</h1>
-        <div class="accent-line"></div>
-        <p>Innovation and reliability in every single step.</p>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Crissanty Blue Logo">
+        </div>
+    </header>
+
+    <section class="hero-app">
+        <h1>Welcome</h1>
+        <p>Your journey to excellence starts here.</p>
     </section>
 
     <main>
-        <a href="#" class="btn-large">
-            <span class="btn-title">Who We Are</span>
-            <span class="btn-subtitle">Discover our history and values.</span>
+        <a href="who_we_are.html" class="nav-button">
+            <span class="btn-text">Who We Are</span>
+            <span class="btn-desc">Learn about our vision and identity.</span>
         </a>
 
-        <a href="#" class="btn-large">
-            <span class="btn-title">Our Mission</span>
-            <span class="btn-subtitle">What we strive for every day.</span>
+        <a href="mission.html" class="nav-button">
+            <span class="btn-text">Our Mission</span>
+            <span class="btn-desc">The purpose behind everything we do.</span>
         </a>
 
-        <a href="#" class="btn-large" style="background: var(--electric-blue);">
-            <span class="btn-title" style="color: white;">Contact Us</span>
-            <span class="btn-subtitle" style="color: rgba(255,255,255,0.8);">Get in touch with our expert team.</span>
+        <a href="contact.html" class="nav-button btn-primary">
+            <span class="btn-text">Contact Us</span>
+            <span class="btn-desc">Connect with our support and sales.</span>
         </a>
     </main>
 
     <footer>
-        CRISSANTY BLUE &copy; 2026
+        CRISSANTY BLUE &bull; 2026
     </footer>
 
 </body>
