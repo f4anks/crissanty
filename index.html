@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>CRISSANTY BLUE | Premium App</title>
+    <title>CRISSANTY BLUE | Excellence in Advisory</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap');
+        /* Importación de fuentes de alta calidad */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap');
 
         :root {
             --electric-blue: #0062FF; 
             --deep-navy: #050A30;
             --soft-gray: #F8FAFC;
             --white: #FFFFFF;
+            --text-secondary: #64748B;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
@@ -25,129 +32,141 @@
             min-height: 100vh;
         }
 
-        /* Banner Principal con Logo */
-        .brand-banner {
+        /* Hero Banner Estilo App Premium */
+        .hero-banner {
             background: linear-gradient(135deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
-            padding: 60px 20px;
+            padding: 60px 20px 50px 20px;
             text-align: center;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
-            box-shadow: 0 10px 30px rgba(0, 98, 255, 0.3);
+            box-shadow: 0 12px 30px rgba(0, 98, 255, 0.25);
         }
 
-        .logo-large {
-            max-width: 80%; /* Logo grande y visible */
+        .logo-container {
+            margin-bottom: 25px;
+        }
+
+        .logo-img {
+            max-width: 280px; /* Tamaño del banner solicitado */
+            width: 85%;
             height: auto;
-            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
-            margin-bottom: 20px;
+            filter: drop-shadow(0 8px 15px rgba(0,0,0,0.3));
         }
 
-        .welcome-text {
-            color: var(--white);
-            margin-top: 10px;
-        }
-
-        .welcome-text h1 {
+        .hero-content h1 {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.8rem;
+            color: var(--white);
             margin: 0;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
 
-        /* Contenedor de Botones Estilo App */
+        .hero-content p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1rem;
+            margin-top: 8px;
+            font-weight: 300;
+        }
+
+        /* Main Menu - App Layout */
         main {
             padding: 35px 25px;
             display: flex;
             flex-direction: column;
-            gap: 18px;
+            gap: 20px;
             flex: 1;
         }
 
-        .nav-button {
+        .nav-card {
             background: var(--white);
             border: none;
-            padding: 25px;
+            padding: 28px 20px;
             border-radius: 24px;
             text-decoration: none;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center; /* Centrado para mayor impacto */
+            align-items: center;
             text-align: center;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-            transition: all 0.2s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid rgba(0, 98, 255, 0.05);
         }
 
-        .nav-button:active {
-            transform: scale(0.95);
-            background-color: #f0f4ff;
+        /* Efecto de pulsación para Mobile */
+        .nav-card:active {
+            transform: scale(0.96);
+            background-color: #F1F5FF;
         }
 
-        .btn-text {
+        .nav-card .title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: var(--electric-blue);
             text-transform: uppercase;
             margin-bottom: 6px;
+            letter-spacing: 0.5px;
         }
 
-        .btn-desc {
+        .nav-card .description {
             font-size: 0.85rem;
-            color: #64748B;
-            font-weight: 400;
-            max-width: 80%;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            max-width: 90%;
         }
 
-        /* Botón Destacado */
-        .btn-primary {
+        /* Botón Destacado (Call to Action) */
+        .nav-card-primary {
             background: var(--electric-blue);
-            border: none;
             box-shadow: 0 10px 25px rgba(0, 98, 255, 0.3);
         }
 
-        .btn-primary .btn-text {
+        .nav-card-primary .title {
             color: var(--white);
         }
 
-        .btn-primary .btn-desc {
-            color: rgba(255,255,255,0.85);
+        .nav-card-primary .description {
+            color: rgba(255, 255, 255, 0.85);
         }
 
+        /* Footer */
         footer {
             text-align: center;
             padding: 30px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #94A3B8;
             font-weight: 700;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
 
-    <section class="brand-banner">
-        <img src="img/logo.png" alt="Crissanty Blue Logo" class="logo-large">
-        <div class="welcome-text">
-            <h1>Welcome to Excellence</h1>
+    <header class="hero-banner">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="CRISSANTY BLUE Logo" class="logo-img">
         </div>
-    </section>
+        <div class="hero-content">
+            <h1>Expert Guidance</h1>
+            <p>Master your investments with confidence.</p>
+        </div>
+    </header>
 
     <main>
-        <a href="who_we_are.html" class="nav-button">
-            <span class="btn-text">Who We Are</span>
-            <span class="btn-desc">Discover the vision and the team behind the blue.</span>
+        <a href="index_who.html" class="nav-card">
+            <span class="title">Who We Are</span>
+            <span class="description">Meet the team of experts dedicated to your financial growth.</span>
         </a>
 
-        <a href="mission.html" class="nav-button">
-            <span class="btn-text">Our Mission</span>
-            <span class="btn-desc">Driving innovation through commitment and core values.</span>
+        <a href="index_mision.html" class="nav-card">
+            <span class="title">Our Mission</span>
+            <span class="description">Learn how we empower entrepreneurs to achieve absolute success.</span>
         </a>
 
-        <a href="contact.html" class="nav-button btn-primary">
-            <span class="btn-text">Contact Us</span>
-            <span class="btn-desc">Let's build something great together. Get in touch.</span>
+        <a href="index_contact.html" class="nav-card nav-card-primary">
+            <span class="title">Contact Us</span>
+            <span class="description">Ready to start? Get a personalized orientation today.</span>
         </a>
     </main>
 
