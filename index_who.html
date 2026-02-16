@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Who We Are | CRISSANTY BLUE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap');
+
+        :root {
+            --electric-blue: #0062FF; 
+            --deep-navy: #050A30;
+            --soft-gray: #F8FAFC;
+            --white: #FFFFFF;
+            --text-secondary: #64748B;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--soft-gray);
+            color: var(--deep-navy);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header / Banner de Identidad */
+        .identity-header {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            color: var(--white);
+            position: relative;
+        }
+
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.2rem;
+            background: rgba(255,255,255,0.15);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .identity-header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        main {
+            padding: 30px 20px;
+            flex: 1;
+        }
+
+        /* Tarjeta de Presentación Principal */
+        .bio-card {
+            background: var(--white);
+            border-radius: 28px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+
+        .bio-card h2 {
+            color: var(--electric-blue);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            margin-top: 0;
+        }
+
+        .bio-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        /* Pilares de Confianza */
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .feature-box {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 20px;
+            border-left: 5px solid var(--electric-blue);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+
+        .feature-box strong {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--deep-navy);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .feature-box p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Botón de Retorno al menú */
+        .return-btn-container {
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        .btn-return {
+            background: var(--deep-navy);
+            color: var(--white);
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding: 18px;
+            border-radius: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 20px rgba(5, 10, 48, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.75rem;
+            color: #94A3B8;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="identity-header">
+        <a href="index.html" class="back-arrow">←</a>
+        <h1>Who We Are</h1>
+    </header>
+
+    <main>
+        <div class="bio-card">
+            <h2>Your Strategic Ally</h2>
+            <p class="bio-text">
+                At <strong>Crissanty Blue</strong>, we are a premier advisory firm specialized in entrepreneurial scaling. We bridge the gap between ambitious ideas and profitable realities through professional mentorship and financial intelligence.
+            </p>
+        </div>
+
+        <div class="features">
+            <div class="feature-box">
+                <strong>Expertise</strong>
+                <p>Years of experience navigating diverse markets and investment portfolios.</p>
+            </div>
+            <div class="feature-box">
+                <strong>Clarity</strong>
+                <p>We simplify complex financial data so you can make informed decisions.</p>
+            </div>
+            <div class="feature-box">
+                <strong>Success</strong>
+                <p>Our methodology is proven to increase the ROI of new ventures.</p>
+            </div>
+        </div>
+
+        <div class="return-btn-container">
+            <a href="index.html" class="btn-return">Return to Menu</a>
+        </div>
+    </main>
+
+    <footer>
+        CRISSANTY BLUE &bull; 2026
+    </footer>
+
+</body>
+</html>
