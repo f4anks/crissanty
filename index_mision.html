@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Our Mission | CRISSANTY BLUE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap');
+
+        :root {
+            --electric-blue: #0062FF; 
+            --deep-navy: #050A30;
+            --soft-gray: #F8FAFC;
+            --white: #FFFFFF;
+            --text-gray: #475569;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--soft-gray);
+            color: var(--deep-navy);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header / Banner sutil para navegación */
+        .mission-header {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            color: var(--white);
+        }
+
+        .btn-back {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 12px;
+        }
+
+        .mission-header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        /* Contenedor de Contenido */
+        main {
+            padding: 30px 25px;
+            flex: 1;
+        }
+
+        .mission-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0, 98, 255, 0.05);
+            line-height: 1.6;
+        }
+
+        .mission-card h2 {
+            color: var(--electric-blue);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            margin-top: 0;
+        }
+
+        .mission-text {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: var(--electric-blue);
+            font-weight: 700;
+        }
+
+        /* Valores o pilares */
+        .pillars {
+            display: grid;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .pillar-item {
+            background: var(--soft-gray);
+            padding: 15px;
+            border-radius: 15px;
+            font-weight: 600;
+            color: var(--deep-navy);
+            display: flex;
+            align-items: center;
+        }
+
+        .pillar-item::before {
+            content: '✓';
+            margin-right: 10px;
+            color: var(--electric-blue);
+            font-weight: 900;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #94A3B8;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="mission-header">
+        <a href="index.html" class="btn-back">← Back</a>
+        <h1>Our Mission</h1>
+    </header>
+
+    <main>
+        <div class="mission-card">
+            <h2>Empowering Success</h2>
+            <p class="mission-text">
+                At <span class="highlight">Crissanty Blue</span>, our mission is to transform aspiring entrepreneurs into world-class business leaders. We provide expert advisory and strategic orientation designed to minimize risks and <span class="highlight">maximize the success of your investments</span>. 
+            </p>
+            <p class="mission-text">
+                We don't just teach business; we mentor the visionaries of tomorrow, ensuring every financial step is backed by knowledge, precision, and a blue-chip standard of excellence.
+            </p>
+
+            <div class="pillars">
+                <div class="pillar-item">Strategic Mentorship</div>
+                <div class="pillar-item">Investment Optimization</div>
+                <div class="pillar-item">Entrepreneurial Growth</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        CRISSANTY BLUE &bull; 2026
+    </footer>
+
+</body>
+</html>
