@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>CRISSANTY BLUE | Main Menu</title>
-    <style>
-        /* Importación de fuentes de alta calidad */
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap');
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
+    <style>
         :root {
             --electric-blue: #0062FF; 
             --deep-navy: #050A30;
@@ -19,11 +21,11 @@
         * {
             box-sizing: border-box;
             -webkit-tap-highlight-color: transparent;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            margin: 0;
-            padding: 0;
             font-family: 'Inter', sans-serif;
             background-color: var(--soft-gray);
             color: var(--deep-navy);
@@ -32,7 +34,7 @@
             min-height: 100vh;
         }
 
-        /* Banner de Marca - Mobile Look */
+        /* Hero Banner */
         .hero-banner {
             background: linear-gradient(135deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
             padding: 60px 20px 45px 20px;
@@ -69,7 +71,7 @@
             font-weight: 300;
         }
 
-        /* Menú de Botones / Cards */
+        /* Menu */
         main {
             padding: 30px 25px;
             display: flex;
@@ -80,7 +82,7 @@
 
         .nav-card {
             background: var(--white);
-            border: none;
+            border: 1px solid rgba(0, 98, 255, 0.05);
             padding: 24px 20px;
             border-radius: 22px;
             text-decoration: none;
@@ -89,11 +91,9 @@
             align-items: center;
             text-align: center;
             box-shadow: 0 6px 15px rgba(0,0,0,0.03);
-            transition: all 0.2s ease;
-            border: 1px solid rgba(0, 98, 255, 0.05);
+            transition: transform 0.2s ease;
         }
 
-        /* Efecto de feedback táctil */
         .nav-card:active {
             transform: scale(0.97);
             background-color: #F1F5FF;
@@ -105,22 +105,19 @@
             color: var(--electric-blue);
             text-transform: uppercase;
             margin-bottom: 4px;
-            letter-spacing: 0.5px;
         }
 
         .nav-card .description {
             font-size: 0.8rem;
             color: var(--text-secondary);
             line-height: 1.3;
-            max-width: 85%;
         }
 
-        /* Botón de Contacto Destacado */
         .nav-card-primary {
             background: var(--electric-blue);
-            box-shadow: 0 10px 25px rgba(0, 98, 255, 0.3);
             border: none;
             margin-top: 10px;
+            box-shadow: 0 10px 25px rgba(0, 98, 255, 0.3);
         }
 
         .nav-card-primary .title {
@@ -131,7 +128,6 @@
             color: rgba(255, 255, 255, 0.85);
         }
 
-        /* Pie de página */
         footer {
             text-align: center;
             padding: 25px;
