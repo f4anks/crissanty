@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>CRISSANTY BLUE | Main Menu</title>
     <style>
+        /* Importación de fuentes de alta calidad */
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap');
 
         :root {
@@ -31,7 +32,7 @@
             min-height: 100vh;
         }
 
-        /* Hero Banner con Logo Visible */
+        /* Banner de Marca - Mobile Look */
         .hero-banner {
             background: linear-gradient(135deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
             padding: 60px 20px 45px 20px;
@@ -49,7 +50,6 @@
             max-width: 280px;
             width: 85%;
             height: auto;
-            /* Asegúrate de que la ruta img/logo.png sea correcta */
             filter: drop-shadow(0 8px 15px rgba(0,0,0,0.3));
         }
 
@@ -69,57 +69,58 @@
             font-weight: 300;
         }
 
-        /* Menú de Navegación */
+        /* Menú de Botones / Cards */
         main {
-            padding: 35px 25px;
+            padding: 30px 25px;
             display: flex;
             flex-direction: column;
-            gap: 18px;
+            gap: 15px;
             flex: 1;
         }
 
         .nav-card {
             background: var(--white);
             border: none;
-            padding: 26px 20px;
-            border-radius: 24px;
+            padding: 24px 20px;
+            border-radius: 22px;
             text-decoration: none;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.03);
+            transition: all 0.2s ease;
             border: 1px solid rgba(0, 98, 255, 0.05);
         }
 
-        /* Efecto de clic para sensación de App */
+        /* Efecto de feedback táctil */
         .nav-card:active {
-            transform: scale(0.96);
+            transform: scale(0.97);
             background-color: #F1F5FF;
         }
 
         .nav-card .title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: var(--electric-blue);
             text-transform: uppercase;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             letter-spacing: 0.5px;
         }
 
         .nav-card .description {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--text-secondary);
-            line-height: 1.4;
-            max-width: 90%;
+            line-height: 1.3;
+            max-width: 85%;
         }
 
-        /* Estilo para el botón de contacto (Destacado) */
+        /* Botón de Contacto Destacado */
         .nav-card-primary {
             background: var(--electric-blue);
             box-shadow: 0 10px 25px rgba(0, 98, 255, 0.3);
             border: none;
+            margin-top: 10px;
         }
 
         .nav-card-primary .title {
@@ -130,10 +131,11 @@
             color: rgba(255, 255, 255, 0.85);
         }
 
+        /* Pie de página */
         footer {
             text-align: center;
-            padding: 30px;
-            font-size: 0.75rem;
+            padding: 25px;
+            font-size: 0.7rem;
             color: #94A3B8;
             font-weight: 700;
             letter-spacing: 2px;
@@ -149,31 +151,31 @@
         </div>
         <div class="hero-content">
             <h1>Expert Advisory</h1>
-            <p>Guiding your path to successful investments.</p>
+            <p>Innovative solutions for entrepreneurs.</p>
         </div>
     </header>
 
-   <main>
-    <a href="index_who.html" class="nav-card">
-        <span class="title">Who We Are</span>
-        <span class="description">Get to know the experts behind your future growth.</span>
-    </a>
+    <main>
+        <a href="index_who.html" class="nav-card">
+            <span class="title">Who We Are</span>
+            <span class="description">Get to know the experts behind your financial growth.</span>
+        </a>
 
-    <a href="index_mision.html" class="nav-card">
-        <span class="title">Our Mission</span>
-        <span class="description">Our commitment to mentoring successful entrepreneurs.</span>
-    </a>
+        <a href="index_mision.html" class="nav-card">
+            <span class="title">Our Mission</span>
+            <span class="description">How we mentor entrepreneurs toward absolute success.</span>
+        </a>
 
-    <a href="index_vision.html" class="nav-card">
-        <span class="title">Our Vision</span>
-        <span class="description">Where we are taking your investments in the long term.</span>
-    </a>
+        <a href="index_vision.html" class="nav-card">
+            <span class="title">Our Vision</span>
+            <span class="description">Where we are taking your business in the long term.</span>
+        </a>
 
-    <a href="index_contact.html" class="nav-card nav-card-primary">
-        <span class="title">Contact Us</span>
-        <span class="description">Ready to start? Request your professional orientation.</span>
-    </a>
-</main>
+        <a href="index_contact.html" class="nav-card nav-card-primary">
+            <span class="title">Contact Us</span>
+            <span class="description">Ready to start? Request your orientation today.</span>
+        </a>
+    </main>
 
     <footer>
         CRISSANTY BLUE &bull; 2026
@@ -181,4 +183,3 @@
 
 </body>
 </html>
-
