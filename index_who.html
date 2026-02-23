@@ -26,15 +26,19 @@
             min-height: 100vh;
         }
 
-        /* Header / Banner de Identidad */
+        /* Banner de Identidad con Imagen Real */
         .identity-header {
-            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
-            padding: 50px 20px;
+            background: linear-gradient(rgba(5, 10, 48, 0.7), rgba(0, 98, 255, 0.4)), 
+                        url('img/quienes.png'); /* Ruta de la nueva imagen */
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
             text-align: center;
             border-bottom-left-radius: 40px;
             border-bottom-right-radius: 40px;
             color: var(--white);
             position: relative;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
 
         .back-arrow {
@@ -43,21 +47,23 @@
             left: 20px;
             color: var(--white);
             text-decoration: none;
-            font-size: 1.2rem;
-            background: rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.2);
             width: 40px;
             height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
+            font-size: 1.2rem;
+            backdrop-filter: blur(5px);
         }
 
         .identity-header h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin: 0;
             text-transform: uppercase;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 
         main {
@@ -65,7 +71,6 @@
             flex: 1;
         }
 
-        /* Tarjeta de Presentación Principal */
         .bio-card {
             background: var(--white);
             border-radius: 28px;
@@ -87,16 +92,15 @@
             color: var(--text-secondary);
         }
 
-        /* Pilares de Confianza */
+        /* Pilares Estilizados */
         .features {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+            display: grid;
+            gap: 12px;
         }
 
         .feature-box {
             background: var(--white);
-            padding: 20px;
+            padding: 18px;
             border-radius: 20px;
             border-left: 5px solid var(--electric-blue);
             box-shadow: 0 4px 12px rgba(0,0,0,0.02);
@@ -106,9 +110,9 @@
             display: block;
             font-family: 'Montserrat', sans-serif;
             color: var(--deep-navy);
-            margin-bottom: 5px;
+            margin-bottom: 4px;
             text-transform: uppercase;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         .feature-box p {
@@ -117,13 +121,8 @@
             color: var(--text-secondary);
         }
 
-        /* Botón de Retorno al menú */
-        .return-btn-container {
-            margin-top: 30px;
-            padding-bottom: 20px;
-        }
-
         .btn-return {
+            margin-top: 30px;
             background: var(--deep-navy);
             color: var(--white);
             text-decoration: none;
@@ -134,13 +133,12 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
             box-shadow: 0 8px 20px rgba(5, 10, 48, 0.2);
         }
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             font-size: 0.75rem;
             color: #94A3B8;
         }
@@ -157,28 +155,26 @@
         <div class="bio-card">
             <h2>Your Strategic Ally</h2>
             <p class="bio-text">
-                At <strong>Crissanty Blue</strong>, we are a premier advisory firm specialized in entrepreneurial scaling. We bridge the gap between ambitious ideas and profitable realities through professional mentorship and financial intelligence.
+                At <strong>Crissanty Blue</strong>, we are more than advisors. We are a specialized ecosystem dedicated to transforming your entrepreneurial vision into financial reality through expertise and precision.
             </p>
         </div>
 
         <div class="features">
             <div class="feature-box">
-                <strong>Expertise</strong>
-                <p>Years of experience navigating diverse markets and investment portfolios.</p>
+                <strong>Knowledge</strong>
+                <p>Strategic orientation backed by years of market analysis.</p>
             </div>
             <div class="feature-box">
                 <strong>Clarity</strong>
-                <p>We simplify complex financial data so you can make informed decisions.</p>
+                <p>We simplify the complex world of investments for you.</p>
             </div>
             <div class="feature-box">
-                <strong>Success</strong>
-                <p>Our methodology is proven to increase the ROI of new ventures.</p>
+                <strong>Impact</strong>
+                <p>Every decision is designed for scalable and sustainable growth.</p>
             </div>
         </div>
 
-        <div class="return-btn-container">
-            <a href="index.html" class="btn-return">Return to Menu</a>
-        </div>
+        <a href="index.html" class="btn-return">Back to Menu</a>
     </main>
 
     <footer>
