@@ -26,14 +26,19 @@
             min-height: 100vh;
         }
 
+        /* Banner con Imagen Real de Ciudad/Futuro */
         .vision-header {
-            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
-            padding: 50px 20px;
+            background: linear-gradient(rgba(5, 10, 48, 0.7), rgba(0, 98, 255, 0.4)), 
+                        url('img/vision.png');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
             text-align: center;
             border-bottom-left-radius: 40px;
             border-bottom-right-radius: 40px;
             color: var(--white);
             position: relative;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
 
         .back-arrow {
@@ -42,7 +47,7 @@
             left: 20px;
             color: var(--white);
             text-decoration: none;
-            background: rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.2);
             width: 40px;
             height: 40px;
             display: flex;
@@ -50,6 +55,7 @@
             justify-content: center;
             border-radius: 50%;
             font-size: 1.2rem;
+            backdrop-filter: blur(5px);
         }
 
         .vision-header h1 {
@@ -57,6 +63,7 @@
             font-size: 2.2rem;
             margin: 0;
             text-transform: uppercase;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 
         main {
@@ -86,17 +93,18 @@
             font-style: italic;
         }
 
-        .goal-highlight {
-            margin-top: 30px;
+        .goal-box {
+            margin-top: 25px;
             padding: 20px;
-            background: var(--soft-gray);
+            background: rgba(0, 98, 255, 0.05);
             border-radius: 20px;
-            font-weight: 600;
             color: var(--deep-navy);
+            font-weight: 600;
+            border: 1px dashed var(--electric-blue);
         }
 
         .btn-return {
-            margin-top: 40px;
+            margin-top: 30px;
             background: var(--deep-navy);
             color: var(--white);
             text-decoration: none;
@@ -127,12 +135,12 @@
 
     <main>
         <div class="vision-card">
-            <h2>2030 Perspective</h2>
+            <h2>Looking Ahead</h2>
             <p class="vision-text">
-                "To become the global benchmark in entrepreneurial advisory, recognized for creating a new generation of high-impact investors who lead with ethics, innovation, and sustainable success."
+                "To be the global ecosystem where every entrepreneur finds the clarity and tools to transform their financial vision into an unstoppable legacy."
             </p>
-            <div class="goal-highlight">
-                Building the future of smart investments, one entrepreneur at a time.
+            <div class="goal-box">
+                Impact. Innovation. Global Leadership.
             </div>
         </div>
 
