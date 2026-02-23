@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Our Vision | CRISSANTY BLUE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap');
+
+        :root {
+            --electric-blue: #0062FF; 
+            --deep-navy: #050A30;
+            --soft-gray: #F8FAFC;
+            --white: #FFFFFF;
+            --text-secondary: #64748B;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--soft-gray);
+            color: var(--deep-navy);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .vision-header {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--electric-blue) 100%);
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            color: var(--white);
+            position: relative;
+        }
+
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: var(--white);
+            text-decoration: none;
+            background: rgba(255,255,255,0.15);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+
+        .vision-header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        main {
+            padding: 30px 20px;
+            flex: 1;
+        }
+
+        .vision-card {
+            background: var(--white);
+            border-radius: 28px;
+            padding: 35px 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .vision-card h2 {
+            color: var(--electric-blue);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .vision-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .goal-highlight {
+            margin-top: 30px;
+            padding: 20px;
+            background: var(--soft-gray);
+            border-radius: 20px;
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+
+        .btn-return {
+            margin-top: 40px;
+            background: var(--deep-navy);
+            color: var(--white);
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding: 18px;
+            border-radius: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            box-shadow: 0 8px 20px rgba(5, 10, 48, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 0.75rem;
+            color: #94A3B8;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="vision-header">
+        <a href="index.html" class="back-arrow">←</a>
+        <h1>Our Vision</h1>
+    </header>
+
+    <main>
+        <div class="vision-card">
+            <h2>2030 Perspective</h2>
+            <p class="vision-text">
+                "To become the global benchmark in entrepreneurial advisory, recognized for creating a new generation of high-impact investors who lead with ethics, innovation, and sustainable success."
+            </p>
+            <div class="goal-highlight">
+                Building the future of smart investments, one entrepreneur at a time.
+            </div>
+        </div>
+
+        <a href="index.html" class="btn-return">Back to Menu</a>
+    </main>
+
+    <footer>
+        CRISSANTY BLUE &bull; 2026
+    </footer>
+
+</body>
+</html>
