@@ -1,155 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Our Vision | CRISSANTY BLUE</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap');
-
-        :root {
-            --electric-blue: #0062FF; 
-            --deep-navy: #050A30;
-            --soft-gray: #F8FAFC;
-            --white: #FFFFFF;
-            --text-secondary: #64748B;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: var(--soft-gray);
-            color: var(--deep-navy);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Banner con Imagen Real de Ciudad/Futuro */
-        .vision-header {
-            background: linear-gradient(rgba(5, 10, 48, 0.7), rgba(0, 98, 255, 0.4)), 
-                        url('img/vision.png');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 20px;
-            text-align: center;
-            border-bottom-left-radius: 40px;
-            border-bottom-right-radius: 40px;
-            color: var(--white);
-            position: relative;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-
-        .back-arrow {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            color: var(--white);
-            text-decoration: none;
-            background: rgba(255,255,255,0.2);
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            font-size: 1.2rem;
-            backdrop-filter: blur(5px);
-        }
-
-        .vision-header h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.2rem;
-            margin: 0;
-            text-transform: uppercase;
-            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-
-        main {
-            padding: 30px 20px;
-            flex: 1;
-        }
-
-        .vision-card {
-            background: var(--white);
-            border-radius: 28px;
-            padding: 35px 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-
-        .vision-card h2 {
-            color: var(--electric-blue);
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        .vision-text {
-            font-size: 1.15rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            font-style: italic;
-        }
-
-        .goal-box {
-            margin-top: 25px;
-            padding: 20px;
-            background: rgba(0, 98, 255, 0.05);
-            border-radius: 20px;
-            color: var(--deep-navy);
-            font-weight: 600;
-            border: 1px dashed var(--electric-blue);
-        }
-
-        .btn-return {
-            margin-top: 30px;
-            background: var(--deep-navy);
-            color: var(--white);
-            text-decoration: none;
-            display: block;
-            text-align: center;
-            padding: 18px;
-            border-radius: 20px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            text-transform: uppercase;
-            box-shadow: 0 8px 20px rgba(5, 10, 48, 0.2);
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            font-size: 0.75rem;
-            color: #94A3B8;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Our Vision</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap');
+:root{--b:#0062FF;--n:#050A30;--w:#FFF;--s:#64748B}
+*{margin:0;padding:0;box-sizing:border-box;user-select:none}
+body{font-family:'Inter';background:#F8FAFC;display:flex;flex-direction:column;min-height:100vh}
+.h{background:linear-gradient(rgba(5,10,48,.7),rgba(5,10,48,.7)),url('img/vision.png');background-size:cover;background-position:center;padding:80px 20px;text-align:center;border-bottom-left-radius:40px;border-bottom-right-radius:40px;color:var(--w);position:relative}
+.a{position:absolute;top:20px;left:20px;color:#FFF;text-decoration:none;background:rgba(255,255,255,.2);width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;backdrop-filter:blur(5px)}
+h1{font-family:'Montserrat';text-transform:uppercase;font-size:1.8rem;text-shadow:0 4px 10px rgba(0,0,0,.3)}
+main{padding:30px 20px;flex:1}
+.card{background:#FFF;padding:30px 20px;border-radius:28px;box-shadow:0 10px 30px rgba(0,0,0,.05);text-align:center}
+.card h2{color:var(--b);margin-bottom:15px;font-family:'Montserrat';font-size:1.4rem}
+.card p{font-size:1.1rem;line-height:1.7;color:var(--s);font-style:italic}
+.box{margin-top:20px;padding:15px;background:rgba(0,98,255,.05);border-radius:15px;color:var(--n);font-weight:600;border:1px dashed var(--b);font-size:.9rem}
+.btn{display:block;margin-top:25px;background:var(--n);color:#FFF;text-align:center;padding:18px;border-radius:20px;text-decoration:none;font-weight:700;font-family:'Montserrat'}
+footer{text-align:center;padding:25px;background:#FFF;border-top:1px solid #EEE}
+.dev{color:var(--b);font-weight:700}
+</style>
+<script>
+document.addEventListener('contextmenu',e=>e.preventDefault());
+document.onkeydown=function(e){if(e.keyCode==123||e.keyCode==116||(e.ctrlKey&&e.shiftKey&&e.keyCode==73))return false;};
+</script>
 </head>
 <body>
-
-    <header class="vision-header">
-        <a href="index.html" class="back-arrow">←</a>
-        <h1>Our Vision</h1>
-    </header>
-
-    <main>
-        <div class="vision-card">
-            <h2>Looking Ahead</h2>
-            <p class="vision-text">
-                "To be the global ecosystem where every entrepreneur finds the clarity and tools to transform their financial vision into an unstoppable legacy."
-            </p>
-            <div class="goal-box">
-                Impact. Innovation. Global Leadership.
-            </div>
-        </div>
-
-        <a href="index.html" class="btn-return">Back to Menu</a>
-    </main>
-
-    <footer>
-        CRISSANTY BLUE &bull; 2026
-    </footer>
-
+<header class="h"><a href="index.html" class="a">←</a><h1>Our Vision</h1></header>
+<main>
+<div class="card">
+<h2>Looking Ahead</h2>
+<p>"To be the global ecosystem where every entrepreneur finds the clarity and tools to transform their financial vision into an unstoppable legacy."</p>
+<div class="box">Impact • Innovation • Global Leadership</div>
+</div>
+<a href="index.html" class="btn">BACK TO MENU</a>
+</main>
+<footer><p style="font-size:.8rem;font-weight:700">© 2026 Crissanty Blue. All Rights Reserved.</p><p style="font-size:.7rem;margin-top:5px;color:#64748B">Developed by <span class="dev">Sistematikos</span></p></footer>
 </body>
 </html>
