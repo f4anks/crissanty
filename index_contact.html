@@ -2,37 +2,100 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>Contact Us</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Contact Us | CRISSANTY BLUE</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400&display=swap');
-:root{--b:#0062FF;--n:#050A30}
-*{margin:0;padding:0;box-sizing:border-box;user-select:none}
-body{font-family:'Inter';background:#F8FAFC}
-.h{background:linear-gradient(135deg,var(--n),var(--b));padding:50px 20px;text-align:center;border-bottom-left-radius:40px;border-bottom-right-radius:40px;color:#FFF;position:relative}
-.a{position:absolute;top:20px;left:20px;color:#FFF;text-decoration:none}
-main{padding:25px}
-.i{background:#FFF;padding:25px;border-radius:24px;box-shadow:0 6px 20px rgba(0,0,0,.03);text-align:center}
-h3{font-family:'Montserrat';font-size:.8rem;color:var(--n);margin:15px 0 5px}
-p,a{font-size:.9rem;color:#64748B;text-decoration:none}
-.l{color:var(--b);font-weight:700}
-footer{text-align:center;padding:30px;background:#FFF;border-top:1px solid #EEE}
-.dev{color:var(--b);font-weight:700}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap');
+:root{--b:#0062FF;--n:#050A30;--g:#F8FAFC;--w:#FFF;--s:#64748B;--bor:#E2E8F0}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0;padding:0;user-select:none}
+body{font-family:'Inter',sans-serif;background:var(--g);color:var(--n);display:flex;flex-direction:column;min-height:100vh;overflow-x:hidden}
+
+/* Header */
+.h{background:linear-gradient(135deg,var(--n),var(--b));padding:45px 20px;text-align:center;border-bottom-left-radius:40px;border-bottom-right-radius:40px;color:var(--w);position:relative;box-shadow:0 10px 20px rgba(0,98,255,.2);animation:fadeIn 0.6s ease-out}
+.back{position:absolute;top:20px;left:20px;color:var(--w);text-decoration:none;background:rgba(255,255,255,.15);width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:1.2rem}
+.h h1{font-family:'Montserrat';font-size:1.8rem;text-transform:uppercase;letter-spacing:-0.5px}
+
+main{padding:25px;flex:1;animation:slideUp 0.7s ease-out}
+
+/* Formulario */
+.f-card{background:var(--w);padding:30px 20px;border-radius:28px;box-shadow:0 10px 30px rgba(0,0,0,.05);margin-bottom:25px}
+.g{margin-bottom:20px}
+.g label{display:block;font-family:'Montserrat';font-size:.75rem;color:var(--b);margin-bottom:8px;text-transform:uppercase;font-weight:800}
+.g input,.g textarea{width:100%;padding:16px;border:1px solid var(--bor);border-radius:14px;font-family:'Inter';font-size:1rem;background:var(--g);color:var(--n);outline:none;transition:.3s}
+.g input:focus,.g textarea:focus{border-color:var(--b);background:var(--w);box-shadow:0 0 0 4px rgba(0,98,255,.1)}
+
+/* Botón Send */
+.btn{width:100%;background:var(--b);color:var(--w);border:none;padding:20px;border-radius:18px;font-family:'Montserrat';font-weight:700;text-transform:uppercase;letter-spacing:1px;box-shadow:0 8px 25px rgba(0,98,255,.3);cursor:pointer;transition:.2s}
+.btn:active{transform:scale(.96)}
+
+/* Info Block */
+.info{background:rgba(0,98,255,.03);padding:25px;border-radius:24px;text-align:center;margin-bottom:20px}
+.info h3{font-family:'Montserrat';font-size:.85rem;color:var(--n);text-transform:uppercase;margin-bottom:5px}
+.info p,.info a{font-size:.95rem;color:var(--s);text-decoration:none;display:block;margin-bottom:12px}
+.link{color:var(--b)!important;font-weight:700}
+
+/* Footer Estilo Sistematikos */
+footer{text-align:center;padding:30px 20px;background:var(--w);border-top:1px solid #EEE}
+.f-crissanty{font-size:.85rem;color:var(--n);font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.f-dev{font-size:.75rem;color:var(--s);margin-top:5px}
+.dev-brand{color:var(--b);font-weight:700}
+
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 </style>
 <script>
+/* Protección Sistematikos */
 document.addEventListener('contextmenu',e=>e.preventDefault());
-document.onkeydown=function(e){if(e.keyCode==123||e.keyCode==116)return false;};
+document.onkeydown=function(e){if(e.keyCode==123||e.keyCode==116||(e.ctrlKey&&e.shiftKey&&e.keyCode==73))return false;};
 </script>
 </head>
 <body>
-<header class="h"><a href="index.html" class="a">← BACK</a><h1>Contact</h1></header>
+
+<header class="h">
+    <a href="index.html" class="back">←</a>
+    <h1>Get in Touch</h1>
+</header>
+
 <main>
-<div class="i">
-<h3>Office</h3><p>1101 W, HAMILTON ST, SUITE 351, ALLENTOWN PA 18101</p>
-<h3>Phone</h3><a href="tel:4845532789" class="l">(484) 553-2789</a>
-<h3>Email</h3><a href="mailto:info@crissanty.com" class="l">info@crissanty.com</a>
-</div>
+    <div class="f-card">
+        <form action="mailto:info@crissanty.com" method="post" enctype="text/plain">
+            <div class="g">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="g">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="name@example.com" required>
+            </div>
+            <div class="g">
+                <label>Investment Interest</label>
+                <input type="text" name="interest" placeholder="e.g. Real Estate, Startups" required>
+            </div>
+            <div class="g">
+                <label>Your Message</label>
+                <textarea name="message" rows="4" placeholder="Tell us about your goals"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Request</button>
+        </form>
+    </div>
+
+    <div class="info">
+        <h3>Our Office</h3>
+        <p>1101 W, HAMILTON ST, SUITE 351, <br> ALLENTOWN PA 18101</p>
+        
+        <h3>Direct Phone</h3>
+        <a href="tel:4845532789" class="link">(484) 553-2789</a>
+
+        <h3>Email</h3>
+        <a href="mailto:info@crissanty.com" class="link">info@crissanty.com</a>
+    </div>
 </main>
-<footer><p>© 2026 Crissanty Blue. All Rights Reserved.</p><p style="font-size:.7rem;margin-top:5px">Developed by <span class="dev">Sistematikos</span></p></footer>
+
+<footer>
+    <p class="f-crissanty">© 2026 Crissanty Blue. All Rights Reserved.</p>
+    <p class="f-dev">Developed by <span class="dev-brand">Sistematikos</span></p>
+</footer>
+
 </body>
 </html>
