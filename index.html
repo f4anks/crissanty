@@ -4,22 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>CRISSANTY BLUE</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap');
 :root{--b:#0062FF;--n:#050A30;--g:#F8FAFC;--w:#FFF;--s:#64748B}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0;padding:0;user-select:none}
-body{font-family:'Inter',sans-serif;background:var(--g);color:var(--n);display:flex;flex-direction:column;min-height:100vh;overflow-x:hidden}
-.h{background:linear-gradient(135deg,var(--n),var(--b));padding:60px 20px;text-align:center;border-bottom-left-radius:50px;border-bottom-right-radius:50px;box-shadow:0 12px 30px rgba(0,98,255,.2)}
-.l{max-width:260px;width:80%;filter:drop-shadow(0 8px 15px rgba(0,0,0,.3))}
+body{font-family:'Inter',sans-serif;background:var(--g);color:var(--n);display:flex;flex-direction:column;min-height:100vh}
+
+/* Banner Principal con Imagen Real */
+.h{
+    background: linear-gradient(rgba(5, 10, 48, 0.6), rgba(0, 98, 255, 0.3)), url('img/home.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 12px 30px rgba(0,98,255,.25);
+}
+
+.l{max-width:240px;width:75%;filter:drop-shadow(0 8px 15px rgba(0,0,0,0.4));margin-bottom:10px}
+.h h1{font-family:'Montserrat';font-size:1.6rem;color:var(--w);text-transform:uppercase;text-shadow:0 2px 10px rgba(0,0,0,0.5)}
+
 main{padding:25px;display:flex;flex-direction:column;gap:12px;flex:1}
-.c{background:var(--w);padding:20px;border-radius:20px;text-decoration:none;display:flex;flex-direction:column;align-items:center;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.05);border:1px solid rgba(0,98,255,.05);transition:.2s}
+.c{background:var(--w);padding:20px;border-radius:22px;text-decoration:none;display:flex;flex-direction:column;align-items:center;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.04);border:1px solid rgba(0,98,255,.05);transition:.2s}
 .c:active{transform:scale(.96);background:#F1F5FF}
 .t{font-family:'Montserrat';font-size:1.1rem;color:var(--b);text-transform:uppercase;margin-bottom:4px}
 .d{font-size:.75rem;color:var(--s)}
 .p{background:var(--b);border:none;box-shadow:0 8px 20px rgba(0,98,255,.3)}
 .p .t,.p .d{color:var(--w)}
+
 footer{text-align:center;padding:25px;background:var(--w);border-top:1px solid #EEE}
 .f1{font-size:.8rem;font-weight:700;text-transform:uppercase;color:var(--n)}
 .f2{font-size:.7rem;color:var(--s);margin-top:4px}
@@ -28,17 +42,23 @@ footer{text-align:center;padding:25px;background:var(--w);border-top:1px solid #
 <script>
 /* Protección Sistematikos */
 document.addEventListener('contextmenu',e=>e.preventDefault());
-document.onkeydown=function(e){if(e.keyCode==123||(e.ctrlKey&&e.shiftKey&&(e.keyCode==73||e.keyCode==74))||(e.ctrlKey&&e.keyCode==85)||e.keyCode==116)return false;};
+document.onkeydown=function(e){if(e.keyCode==123||e.keyCode==116)return false;};
 </script>
 </head>
 <body>
-<header class="h"><img src="img/logo.png" class="l"><h1></h1></header>
+<header class="h">
+    <img src="img/logo.png" class="l">
+    <h1>Expert Advisory</h1>
+</header>
 <main>
-<a href="index_who.html" class="c"><span class="t">Who We Are</span><span class="d">Meet your financial advisory team.</span></a>
-<a href="index_mision.html" class="c"><span class="t">Our Mission</span><span class="d">Mentoring entrepreneurs to success.</span></a>
-<a href="index_vision.html" class="c"><span class="t">Our Vision</span><span class="d">Future-ready business strategies.</span></a>
-<a href="index_contact.html" class="c p"><span class="t">Contact Us</span><span class="d">Start your orientation today.</span></a>
+    <a href="index_who.html" class="c"><span class="t">Who We Are</span><span class="d">Meet your financial advisory team.</span></a>
+    <a href="index_mision.html" class="c"><span class="t">Our Mission</span><span class="d">Mentoring entrepreneurs to success.</span></a>
+    <a href="index_vision.html" class="c"><span class="t">Our Vision</span><span class="d">Future-ready business strategies.</span></a>
+    <a href="index_contact.html" class="c p"><span class="t">Contact Us</span><span class="d">Start your orientation today.</span></a>
 </main>
-<footer><p class="f1">© 2026 Crissanty Blue. All Rights Reserved.</p><p class="f2">Developed by <span class="dev">Sistematikos</span></p></footer>
+<footer>
+    <p class="f1">© 2026 Crissanty Blue. All Rights Reserved.</p>
+    <p class="f2">Developed by <span class="dev">Sistematikos</span></p>
+</footer>
 </body>
 </html>
