@@ -4,42 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<title>Contact Us | CRISSANTY BLUE</title>
+<title>Contact | CRISSANTY BLUE</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap');
-:root{--b:#0062FF;--n:#050A30;--g:#F8FAFC;--w:#FFF;--s:#64748B;--bor:#E2E8F0}
+:root{--b:#0062FF;--n:#050A30;--g:#F8FAFC;--w:#FFF;--s:#64748B;--wa:#25D366}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0;padding:0;user-select:none}
 body{font-family:'Inter',sans-serif;background:var(--g);color:var(--n);display:flex;flex-direction:column;min-height:100vh;overflow-x:hidden}
 
-/* Header */
-.h{background:linear-gradient(135deg,var(--n),var(--b));padding:45px 20px;text-align:center;border-bottom-left-radius:40px;border-bottom-right-radius:40px;color:var(--w);position:relative;box-shadow:0 10px 20px rgba(0,98,255,.2);animation:fadeIn 0.6s ease-out}
-.back{position:absolute;top:20px;left:20px;color:var(--w);text-decoration:none;background:rgba(255,255,255,.15);width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:1.2rem}
-.h h1{font-family:'Montserrat';font-size:1.8rem;text-transform:uppercase;letter-spacing:-0.5px}
+/* Header Crissanty */
+.h{background:linear-gradient(135deg,var(--n),var(--b));padding:45px 20px;text-align:center;border-bottom-left-radius:40px;border-bottom-right-radius:40px;color:var(--w);position:relative;box-shadow:0 10px 20px rgba(0,98,255,.2);animation:fadeIn 0.6s}
+.back{position:absolute;top:20px;left:20px;color:var(--w);text-decoration:none;background:rgba(255,255,255,.15);width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%}
+.h h1{font-family:'Montserrat';font-size:1.8rem;text-transform:uppercase}
 
 main{padding:25px;flex:1;animation:slideUp 0.7s ease-out}
 
-/* Formulario */
-.f-card{background:var(--w);padding:30px 20px;border-radius:28px;box-shadow:0 10px 30px rgba(0,0,0,.05);margin-bottom:25px}
-.g{margin-bottom:20px}
-.g label{display:block;font-family:'Montserrat';font-size:.75rem;color:var(--b);margin-bottom:8px;text-transform:uppercase;font-weight:800}
-.g input,.g textarea{width:100%;padding:16px;border:1px solid var(--bor);border-radius:14px;font-family:'Inter';font-size:1rem;background:var(--g);color:var(--n);outline:none;transition:.3s}
-.g input:focus,.g textarea:focus{border-color:var(--b);background:var(--w);box-shadow:0 0 0 4px rgba(0,98,255,.1)}
+/* Info Card */
+.info-card{background:var(--w);padding:30px 20px;border-radius:28px;box-shadow:0 10px 30px rgba(0,0,0,.05);text-align:center}
+.info-card h3{font-family:'Montserrat';font-size:.8rem;color:var(--n);text-transform:uppercase;margin-top:20px;margin-bottom:5px}
+.info-card p{font-size:.95rem;color:var(--s);margin-bottom:15px}
 
-/* Botón Send */
-.btn{width:100%;background:var(--b);color:var(--w);border:none;padding:20px;border-radius:18px;font-family:'Montserrat';font-weight:700;text-transform:uppercase;letter-spacing:1px;box-shadow:0 8px 25px rgba(0,98,255,.3);cursor:pointer;transition:.2s}
-.btn:active{transform:scale(.96)}
+/* Botón WhatsApp Estilo App */
+.ws-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;background:var(--wa);color:var(--w);padding:18px;border-radius:18px;text-decoration:none;font-family:'Montserrat';font-weight:700;text-transform:uppercase;box-shadow:0 8px 20px rgba(37,211,102,0.3);transition:.2s;margin-top:10px}
+.ws-btn:active{transform:scale(.96);box-shadow:none}
 
-/* Info Block */
-.info{background:rgba(0,98,255,.03);padding:25px;border-radius:24px;text-align:center;margin-bottom:20px}
-.info h3{font-family:'Montserrat';font-size:.85rem;color:var(--n);text-transform:uppercase;margin-bottom:5px}
-.info p,.info a{font-size:.95rem;color:var(--s);text-decoration:none;display:block;margin-bottom:12px}
-.link{color:var(--b)!important;font-weight:700}
-
-/* Footer Estilo Sistematikos */
-footer{text-align:center;padding:30px 20px;background:var(--w);border-top:1px solid #EEE}
-.f-crissanty{font-size:.85rem;color:var(--n);font-weight:700;text-transform:uppercase;letter-spacing:1px}
-.f-dev{font-size:.75rem;color:var(--s);margin-top:5px}
-.dev-brand{color:var(--b);font-weight:700}
+/* Footer Sistematikos */
+footer{text-align:center;padding:30px;background:var(--w);border-top:1px solid #EEE}
+.f1{font-size:.85rem;font-weight:700;color:var(--n);text-transform:uppercase}
+.dev{color:var(--b);font-weight:700}
 
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes slideUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
@@ -54,49 +45,31 @@ document.onkeydown=function(e){if(e.keyCode==123||e.keyCode==116||(e.ctrlKey&&e.
 
 <header class="h">
     <a href="index.html" class="back">←</a>
-    <h1>Get in Touch</h1>
+    <h1>Contact Us</h1>
 </header>
 
 <main>
-    <div class="f-card">
-        <form action="mailto:info@crissanty.com" method="post" enctype="text/plain">
-            <div class="g">
-                <label>Full Name</label>
-                <input type="text" name="name" placeholder="Enter your name" required>
-            </div>
-            <div class="g">
-                <label>Email Address</label>
-                <input type="email" name="email" placeholder="name@example.com" required>
-            </div>
-            <div class="g">
-                <label>Investment Interest</label>
-                <input type="text" name="interest" placeholder="e.g. Real Estate, Startups" required>
-            </div>
-            <div class="g">
-                <label>Your Message</label>
-                <textarea name="message" rows="4" placeholder="Tell us about your goals"></textarea>
-            </div>
-            <button type="submit" class="btn">Send Request</button>
-        </form>
-    </div>
-
-    <div class="info">
+    <div class="info-card">
         <h3>Our Office</h3>
         <p>1101 W, HAMILTON ST, SUITE 351, <br> ALLENTOWN PA 18101</p>
         
-        <h3>Direct Phone Whatsapp</h3>
-        <a href="tel:4845532789" class="link">wa.link/5sn3rg</a>
+        <h3>Direct Support</h3>
+        <a href="https://wa.me/14845532789" target="_blank" class="ws-btn">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.747-2.874-2.512-2.96-2.626-.088-.113-.716-.953-.716-1.815 0-.863.454-1.287.614-1.454.161-.168.349-.209.465-.209s.233.002.334.008c.106.005.249-.04.39.298.144.347.491 1.2.533 1.287.043.087.072.188.014.305-.058.118-.087.188-.173.289l-.26.304c-.087.101-.177.211-.077.385.101.173.449.741.96 1.197.66.59 1.213.773 1.387.86.173.086.274.072.376-.043.101-.116.433-.504.548-.677.116-.173.231-.144.39-.086.158.058 1.011.477 1.184.564s.289.13.332.202c.045.072.045.419-.1.824z"/>
+            </svg>
+            Connect to WhatsApp
+        </a>
 
-        <h3>Email</h3>
-        <a href="mailto:info@crissanty.com" class="link">info@crissanty.com</a>
+        <h3 style="margin-top:30px">Email Address</h3>
+        <p><a href="mailto:info@crissanty.com" style="color:var(--b); font-weight:700; text-decoration:none">info@crissanty.com</a></p>
     </div>
 </main>
 
 <footer>
-    <p class="f-crissanty">© 2026 Crissanty Blue. All Rights Reserved.</p>
-    <p class="f-dev">Developed by <span class="dev-brand">Sistematikos</span></p>
+    <p class="f1">© 2026 Crissanty Blue. All Rights Reserved.</p>
+    <p style="font-size:.7rem; color:var(--s); margin-top:5px">Developed by <span class="dev">Sistematikos</span></p>
 </footer>
 
 </body>
 </html>
-
